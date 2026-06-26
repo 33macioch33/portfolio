@@ -1,0 +1,13 @@
+# Brak wrażliwych plików w repo portfolio
+.env
+*.key
+*.secret
+
+# Systemowe
+.DS_Store
+Thumbs.db
+desktop.ini
+
+# Edytory
+.vscode/
+.idea/
