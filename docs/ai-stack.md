@@ -11,7 +11,7 @@
 flowchart TB
     subgraph CLOUD[☁️ Chmura]
         CLAUDE[🤖 Claude Code<br/>główny asystent:<br/>współtworzy bazę wiedzy, kod i audyt]
-        GPT[ChatGPT / inne modele<br/>uzupełniająco]
+        GPT[ChatGPT / inne modele<br/>uzupełniająco — bez dostępu do bazy]
     end
 
     subgraph LOCAL[💻 Mój komputer - offline]
@@ -27,9 +27,8 @@ flowchart TB
 
     CLAUDE ==>|tworzy i edytuje notatki + kod| VAULT
     CLAUDE -.->|czyta kontekst| MCP
-    GPT -.uzupełniająco.-> VAULT
     CONT --> OLL
-    OLL -->|czyta i edytuje notatki przez RAG/edytor| VAULT
+    OLL -->|czyta i edytuje notatki + pisze kod przez RAG/edytor| VAULT
     RAG --> VAULT
     MCP --> VAULT
     MEM --> VAULT
@@ -44,8 +43,8 @@ flowchart TB
 
 <sub>Bazę wiedzy (Obsidian) współtworzę głównie z <b>Claude Code</b> — asystent czyta kontekst
 przez RAG/MCP i bezpośrednio tworzy oraz edytuje notatki i kod. <b>Modele lokalne też mają dostęp
-do tej samej bazy</b> (czytają przez RAG i edytują notatki przez edytor) — obsługują pracę offline
-i rutynową.</sub>
+do tej samej bazy</b> (czytają przez RAG, edytują notatki i <b>piszą kod</b> w edytorze) — obsługują
+pracę offline i rutynową.</sub>
 
 ---
 
@@ -55,8 +54,8 @@ i rutynową.</sub>
 - Stawianie i zarządzanie modelami uruchamianymi **lokalnie** (m.in. `qwen3:4b`) — pełny offline.
 - Realne zarządzanie ograniczeniami sprzętu: dobór rozmiaru modelu pod **GPU 4 GB VRAM**, throughput.
 - Integracja z edytorem przez **Continue.dev** w VS Code jako asystent kodowania.
-- **Dostęp do tej samej bazy wiedzy (Obsidian)** co modele chmurowe — czytają kontekst przez RAG
-  i edytują notatki bezpośrednio w edytorze.
+- **Dostęp do tej samej bazy wiedzy (Obsidian)** co modele chmurowe — czytają kontekst przez RAG,
+  edytują notatki i **piszą kod** bezpośrednio w edytorze.
 
 ### 🔎 RAG offline (wyszukiwanie semantyczne)
 - Zbudowany **od zera**: embeddingi `bge-m3` + własny indeks wektorowy.
