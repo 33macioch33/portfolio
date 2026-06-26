@@ -1,92 +1,97 @@
-# Maciej Ageev — AI Tools Specialist · Portfolio
+<div align="center">
 
-> Praktyczne wykorzystanie narzędzi AI: lokalne modele LLM, systemy RAG, automatyzacja
-> i orkiestracja asystentów kodowania w realnym, wieloskładnikowym projekcie badawczym.
+# Maciej Ageev — AI Tools Specialist
+
+**Buduję działające systemy AI na potrzeby rynków finansowych** — lokalne modele LLM,
+wyszukiwanie semantyczne (RAG), automatyzacja i orkiestracja asystentów AI w realnym,
+wieloskładnikowym projekcie badawczym.
 
 📍 Serock · ✉ ageevmaciek@gmail.com · 📞 790 778 332
 
+[![CV](https://img.shields.io/badge/📄_CV-Pobierz_PDF-14555e?style=for-the-badge)](CV-Maciej-Ageev.pdf)
+&nbsp;
+[![Workflow](https://img.shields.io/badge/⚙️_Workflow-Zobacz-2bb3a3?style=for-the-badge)](docs/workflow.md)
+
+</div>
+
 ---
 
-## Kim jestem
+## 👤 Kim jestem
 
 Nie tylko *używam* modeli językowych — **buduję wokół nich działające systemy**.
-Samodzielnie postawiłem i utrzymuję prywatny projekt badawczy do analizy rynków
-finansowych, w którym łączę: lokalnie hostowane modele LLM, własny system RAG offline,
-pamięć między sesjami oraz zautomatyzowane pipeline'y z bramkami jakości.
+Samodzielnie postawiłem i utrzymuję prywatny projekt badawczy do analizy rynków finansowych,
+w którym łączę: lokalnie hostowane modele LLM, własny system RAG offline, pamięć między
+sesjami i zautomatyzowane pipeline'y z bramkami jakości.
 
 Wykształcenie techniczne (technik mechatronik) daje mi inżynierską dyscyplinę:
 **weryfikuję wyniki zamiast im ufać** i myślę w kategoriach „gdzie to się może zepsuć".
 
-> ⚠️ Główny projekt jest **prywatny** (zawiera autorskie badania). Poniżej znajduje się
-> sanityzowany przegląd architektury i kompetencji — bez wrażliwych szczegółów.
+> ⚠️ Główny projekt jest **prywatny** (autorskie badania). To repozytorium to sanityzowany
+> przegląd architektury, metody pracy i kompetencji — bez wrażliwych szczegółów strategii.
 
 ---
 
-## Mój główny projekt — widok grafu wiedzy (Obsidian)
+## 🗂️ Co znajdziesz w tym repo
 
-Cały projekt prowadzę jako połączoną bazę wiedzy w Obsidian. Graf poniżej pokazuje
-skalę i strukturę powiązań notatek badawczych, decyzji i komponentów systemu:
-
-![Graf główny projektu](assets/graph-overview.jpg)
-
-<sub>Pełny graf wiedzy projektu badawczego — każdy węzeł to notatka (strategia, audyt,
-decyzja, komponent infrastruktury AI), krawędzie to powiązania między nimi. Gęsty
-rdzeń to rdzeń badawczy, satelitarne klastry to wydzielone obszary tematyczne.</sub>
-
----
-
-## Co realnie zbudowałem
-
-### 🧠 Lokalne modele LLM (self-hosting / offline)
-- Stawianie i zarządzanie modelami lokalnie przez **Ollama** (m.in. `qwen3:4b`) — pełny offline
-- Integracja z edytorem przez **Continue.dev** w VS Code (asystent kodowania na własnym GPU)
-- Zarządzanie ograniczeniami sprzętu (GPU 4 GB VRAM): dobór modelu, throughput, tryby pracy
-- Świadomy podział zadań: rutynowe → model lokalny; krytyczne → model chmurowy premium
-
-### 🔎 RAG i wyszukiwanie semantyczne
-- Zbudowany od zera **lokalny RAG offline**: embeddingi `bge-m3` + własny indeks wektorowy
-- Pipeline ingest → search; pilotaż na realnym korpusie (~1300 fragmentów) z wysoką trafnością
-- Token-efficient czytanie dokumentów (ekstrakcja/wyszukiwanie zamiast ładowania całości)
-
-### ⚙️ Automatyzacja i orkiestracja AI
-- **Bramkowany pipeline badawczy** w stylu mini-działu R&D: generowanie → kod → audyt →
-  walidacja → raport, z automatycznymi bramkami jakości
-- Praca z **MCP (Model Context Protocol)** — serwery narzędziowe rozszerzające asystentów AI
-- Własny **system pamięci między sesjami** (pliki + synchronizacja), by narzędzie AI
-  „pamiętało" wnioski z poprzedniej pracy
-- Web scrapery do pozyskiwania danych (z obsługą throttlingu i edge-case'ów)
-
-### 🧪 Dyscyplina weryfikacji (to mnie wyróżnia)
-- Wbudowana zasada: **„każdy wynik jest podejrzany, dopóki nie udowodnię, że jest poprawny"**
-- Wykrywanie błędów typu *lookahead / data leakage*, które fałszują wyniki analiz
-- Testy out-of-sample, walk-forward i symulacje Monte Carlo jako standard, nie dodatek
-
----
-
-## Stack i narzędzia
-
-| Kategoria | Narzędzia |
+| Plik | Co to jest |
 |---|---|
-| Modele lokalne | Ollama, Continue.dev, qwen3 |
-| RAG / embeddings | bge-m3, własny indeks wektorowy (numpy) |
-| Asystenci AI | Claude (Anthropic), ChatGPT (OpenAI), Gemini, Grok |
-| Automatyzacja | MCP, pipeline z bramkami, pamięć między sesjami |
-| Język / narzędzia | Python, Git/GitHub, PowerShell/CLI, Markdown/Obsidian |
-| Generatywne (obraz) | Midjourney, NanoBanana Pro |
+| 📄 **[CV-Maciej-Ageev.pdf](CV-Maciej-Ageev.pdf)** | Jednostronicowe CV (gotowe do druku, tekst selektowalny) |
+| ⚙️ **[docs/workflow.md](docs/workflow.md)** | Jak pracuję — bramkowany pipeline badawczy (diagram) |
+| 🧠 **[docs/ai-stack.md](docs/ai-stack.md)** | Architektura lokalnego stacku AI: LLM + RAG + MCP + pamięć |
+| 🔭 **[docs/about-project.md](docs/about-project.md)** | O projekcie badawczym (sanityzowany przegląd) |
+| 🕸️ **[assets/graph-overview.jpg](assets/graph-overview.jpg)** | Graf wiedzy całego projektu (Obsidian) |
 
 ---
 
-## Wykształcenie i języki
+## 🕸️ Mój projekt jako graf wiedzy
 
-- **Technik Mechatronik** — ukończone 2025 (elektronika, automatyka, sterowniki PLC)
-- **Certyfikat** — kurs programowania w Python
-- **Angielski B2/B2+** — swobodna praca z dokumentacją techniczną
+Cały projekt prowadzę jako połączoną bazę wiedzy w Obsidian. Graf pokazuje skalę i strukturę
+powiązań notatek badawczych, decyzji i komponentów systemu:
+
+![Graf wiedzy projektu](assets/graph-overview.jpg)
+
+<sub>Każdy węzeł to notatka (strategia, audyt, decyzja, komponent infrastruktury AI),
+krawędzie to powiązania. Gęsty rdzeń = rdzeń badawczy; satelitarne klastry = wydzielone obszary tematyczne.</sub>
 
 ---
 
-## Kontakt
+## ⚙️ Jak pracuję — w skrócie
 
-✉ ageevmaciek@gmail.com · 📞 790 778 332 · 📍 Serock
+```mermaid
+flowchart LR
+    A[Pomysł / hipoteza] --> B[Kod<br/>czysty z założenia]
+    B --> C{Audyt<br/>lookahead?}
+    C -->|błąd| X[❌ Odrzuć]
+    C -->|czysto| D[Walidacja<br/>out-of-sample]
+    D -->|nie przeżył| X
+    D -->|przeżył| E[Robustność<br/>Monte Carlo]
+    E -->|nie przeżył| X
+    E -->|przeżył| F[✅ Raport]
+    style F fill:#2bb3a3,color:#fff
+    style X fill:#c0392b,color:#fff
+```
 
-<sub>Repozytorium jest przeglądem portfolio. Główny kod projektu pozostaje prywatny
-ze względu na autorski charakter badań — chętnie omówię szczegóły na rozmowie.</sub>
+Każdy pomysł przechodzi przez **bramki jakości** — większość ginie po drodze, i tak ma być.
+Pełny opis: **[docs/workflow.md](docs/workflow.md)**.
+
+---
+
+## 🛠️ Stack
+
+`Python` · `Ollama` · `Continue.dev` · `RAG (bge-m3)` · `MCP` · `Git/GitHub` ·
+`Obsidian` · `PowerShell/CLI` · `Claude · ChatGPT · Gemini · Grok` · `Midjourney`
+
+---
+
+## 🎓 Wykształcenie
+
+- **Technik Mechatronik** — ZSZ nr 2 im. Żwirki i Wigury, 2025 (elektronika, automatyka, PLC)
+- Certyfikat kursu programowania w **Python**
+- Angielski **B2/B2+**
+
+---
+
+<div align="center">
+<sub>Kod głównego projektu pozostaje prywatny ze względu na autorski charakter badań.
+Chętnie omówię szczegóły na rozmowie.</sub>
+</div>

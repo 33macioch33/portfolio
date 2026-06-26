@@ -1,6 +1,6 @@
 # MACIEJ AGEEV
 **AI Tools Specialist · Automatyzacja z LLM · Junior Python**
-📍 Serock · 📞 790 778 332 · ✉ ageevmaciek@gmail.com · GitHub: _[do uzupełnienia]_
+📍 Serock · 📞 790 778 332 · ✉ ageevmaciek@gmail.com · GitHub: github.com/33macioch33/portfolio
 
 ---
 
