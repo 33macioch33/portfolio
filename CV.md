@@ -35,7 +35,7 @@ oparte o AI.
 - Zaprojektowany **bramkowany pipeline badawczy** w stylu mini-działu R&D: generowanie → kodowanie → audyt → walidacja → raport, z automatycznymi bramkami jakości
 - Praca z **MCP (Model Context Protocol)** — serwery narzędziowe rozszerzające możliwości asystentów AI
 - Własny **system pamięci między sesjami** (pliki + synchronizacja), by narzędzie AI „pamiętało" wnioski z poprzedniej pracy
-- Web scrapery do pozyskiwania danych z obsługą throttlingu i edge-case'ów
+- **Własne narzędzia CLI**: skrypty/scrapery w Pythonie zbierające dane z internetu (z obsługą throttlingu i edge-case'ów) i automatycznie tworzące notatki w bazie wiedzy
 
 **Prompt engineering (zaawansowany, codzienny)**
 - ChatGPT (OpenAI), Claude (Anthropic), Gemini (Google), Grok (xAI), DeepSeek, Qwen

@@ -72,7 +72,7 @@
   .dot.on { background: var(--accent); }
 
   /* ---------- MAIN ---------- */
-  .main { padding: 15mm 13mm 12mm; }
+  .main { padding: 12mm 13mm 9mm; }
   .name { font-size: 27pt; font-weight: 800; color: var(--teal-900); line-height: 1.02; letter-spacing: -.3px; }
   .name span { color: var(--accent); }
   .role {
@@ -85,21 +85,21 @@
   }
   .tagline b { color: var(--ink); font-weight: 600; }
 
-  .sec { margin-top: 7mm; }
+  .sec { margin-top: 5.5mm; }
   .sec-head { display: flex; align-items: center; gap: 2.5mm; margin-bottom: 3mm; }
   .sec-head .ic { width: 5mm; height: 5mm; flex: 0 0 auto; display: grid; place-items: center; background: var(--teal-900); border-radius: 4px; }
   .sec-head .ic svg { width: 3.2mm; height: 3.2mm; stroke: var(--accent-soft); }
   .sec-head h2 { font-size: 10.5pt; font-weight: 700; color: var(--teal-900); letter-spacing: .3px; text-transform: uppercase; }
   .sec-head h2::after { content:""; }
 
-  .comp { margin-bottom: 3mm; }
+  .comp { margin-bottom: 2.2mm; }
   .comp .ct { font-size: 9.2pt; font-weight: 700; color: var(--teal-800); }
   .comp .cd { font-size: 9pt; color: var(--ink-soft); line-height: 1.45; }
   .comp .cd code { background: #eef5f4; color: var(--teal-800); padding: 0 1.2mm; border-radius: 3px; font-size: 8.4pt; font-family: "Inter", monospace; }
 
   .proj-card {
     background: #f6faf9; border: 1px solid var(--line); border-left: 3px solid var(--accent);
-    border-radius: 5px; padding: 4mm 5mm; margin-top: 1mm;
+    border-radius: 5px; padding: 3mm 5mm; margin-top: 1mm;
   }
   .proj-card ul { list-style: none; }
   .proj-card li { position: relative; padding-left: 5mm; margin: 1.8mm 0; font-size: 9pt; color: var(--ink-soft); line-height: 1.45; }
@@ -113,7 +113,7 @@
   .exp li { position: relative; padding-left: 4.5mm; margin: 1.2mm 0; font-size: 9pt; color: var(--ink-soft); }
   .exp li::before { content:""; position:absolute; left:0; top:2.3mm; width:1.6mm; height:1.6mm; background: var(--accent-soft); border-radius:50%; }
 
-  .rodo { margin-top: 8mm; padding-top: 3mm; border-top: 1px solid var(--line); font-size: 6.9pt; color: #9aa8ad; font-style: italic; line-height: 1.4; }
+  .rodo { margin-top: 4.5mm; padding-top: 2.5mm; border-top: 1px solid var(--line); font-size: 6.9pt; color: #9aa8ad; font-style: italic; line-height: 1.4; }
 </style>
 </head>
 <body>
@@ -152,7 +152,7 @@
     </div>
     <div class="skill-block">
       <div class="skill-label">Automatyzacja AI</div>
-      <div class="chips"><span class="chip">MCP</span><span class="chip">pipeline</span><span class="chip">web scraping</span><span class="chip">pamięć sesji</span></div>
+      <div class="chips"><span class="chip">MCP</span><span class="chip">pipeline</span><span class="chip">własne CLI</span><span class="chip">web scraping</span><span class="chip">auto-notatki</span><span class="chip">pamięć sesji</span></div>
     </div>
     <div class="skill-block">
       <div class="skill-label">Język &amp; narzędzia</div>
@@ -196,7 +196,8 @@
       </div>
       <div class="comp"><span class="ct">Lokalne modele LLM (offline) — </span><span class="cd">stawianie i zarządzanie modelami przez <code>Ollama</code> (<code>qwen3:4b</code>) + <code>Continue.dev</code> w VS Code; praca w ograniczeniach sprzętu (GPU 4&nbsp;GB VRAM).</span></div>
       <div class="comp"><span class="ct">RAG &amp; wyszukiwanie semantyczne — </span><span class="cd">własny system offline (<code>bge-m3</code> + indeks wektorowy), pipeline ingest→search na korpusie ~1300 fragmentów.</span></div>
-      <div class="comp"><span class="ct">Automatyzacja i orkiestracja AI — </span><span class="cd">bramkowany pipeline badawczy (generowanie→audyt→walidacja→raport), <code>MCP</code>, pamięć między sesjami, web scrapery.</span></div>
+      <div class="comp"><span class="ct">Automatyzacja i orkiestracja AI — </span><span class="cd">bramkowany pipeline badawczy (generowanie→audyt→walidacja→raport), <code>MCP</code>, pamięć między sesjami.</span></div>
+      <div class="comp"><span class="ct">Własne narzędzia CLI — </span><span class="cd">skrypty/scrapery w Pythonie zbierające dane z internetu (z obsługą throttlingu) i automatycznie tworzące notatki w bazie wiedzy.</span></div>
       <div class="comp"><span class="ct">Dyscyplina weryfikacji — </span><span class="cd">wykrywanie błędów danych (<i>lookahead / leakage</i>), testy out-of-sample, symulacje Monte&nbsp;Carlo.</span></div>
     </section>
 

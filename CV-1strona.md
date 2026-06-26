@@ -12,7 +12,8 @@ weryfikuję wyniki, zamiast im ufać.
 ## Kompetencje
 - **Lokalne LLM (offline):** Ollama (`qwen3:4b`) + Continue.dev w VS Code; zarządzanie GPU 4 GB VRAM
 - **RAG / wyszukiwanie semantyczne:** własny system offline (`bge-m3` + indeks wektorowy), korpus ~1300 fragmentów
-- **Automatyzacja AI:** bramkowany pipeline (generowanie→audyt→walidacja→raport), MCP, pamięć między sesjami, web scrapery
+- **Automatyzacja AI:** bramkowany pipeline (generowanie→audyt→walidacja→raport), MCP, pamięć między sesjami
+- **Własne narzędzia CLI:** scrapery w Pythonie zbierające dane z internetu i automatycznie tworzące notatki w bazie wiedzy
 - **Prompt engineering:** Claude, ChatGPT, Gemini, Grok, DeepSeek, Qwen (codzienna, zaawansowana praca) · Midjourney, NanoBanana Pro
 - **Weryfikacja:** wykrywanie błędów danych (*lookahead / leakage*), testy out-of-sample, Monte Carlo
 
