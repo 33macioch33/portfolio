@@ -11,3 +11,6 @@ desktop.ini
 # Edytory
 .vscode/
 .idea/
+
+# Źródło CV (lokalne — generuje PDF, nie publikujemy surowego HTML)
+CV-template.html
