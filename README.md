@@ -79,7 +79,7 @@ Pełny opis: **[docs/workflow.md](docs/workflow.md)**.
 ## 🛠️ Stack
 
 `Python` · `Ollama` · `Continue.dev` · `RAG (bge-m3)` · `MCP` · `Git/GitHub` ·
-`Obsidian` · `PowerShell/CLI` · `Claude · ChatGPT · Gemini · Grok` · `Midjourney`
+`Obsidian` · `PowerShell/CLI` · `Claude · ChatGPT · Gemini · Grok · DeepSeek · Qwen` · `Midjourney`
 
 ---
 

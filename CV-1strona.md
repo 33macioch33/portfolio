@@ -13,7 +13,7 @@ weryfikuję wyniki, zamiast im ufać.
 - **Lokalne LLM (offline):** Ollama (`qwen3:4b`) + Continue.dev w VS Code; zarządzanie GPU 4 GB VRAM
 - **RAG / wyszukiwanie semantyczne:** własny system offline (`bge-m3` + indeks wektorowy), korpus ~1300 fragmentów
 - **Automatyzacja AI:** bramkowany pipeline (generowanie→audyt→walidacja→raport), MCP, pamięć między sesjami, web scrapery
-- **Prompt engineering:** Claude, ChatGPT, Gemini, Grok (codzienna, zaawansowana praca) · Midjourney, NanoBanana Pro
+- **Prompt engineering:** Claude, ChatGPT, Gemini, Grok, DeepSeek, Qwen (codzienna, zaawansowana praca) · Midjourney, NanoBanana Pro
 - **Weryfikacja:** wykrywanie błędów danych (*lookahead / leakage*), testy out-of-sample, Monte Carlo
 
 **Stack:** Python · Ollama · Continue.dev · Git/GitHub · MCP · RAG (bge-m3) · Obsidian · REST API · PowerShell/CLI

@@ -38,7 +38,7 @@ oparte o AI.
 - Web scrapery do pozyskiwania danych z obsługą throttlingu i edge-case'ów
 
 **Prompt engineering (zaawansowany, codzienny)**
-- ChatGPT (OpenAI), Claude (Anthropic), Gemini (Google), Grok (xAI)
+- ChatGPT (OpenAI), Claude (Anthropic), Gemini (Google), Grok (xAI), DeepSeek, Qwen
 - Iteracyjne dopracowywanie wyników, projektowanie wieloetapowych workflowów, instrukcje systemowe
 - Generatywne obrazy: Midjourney, NanoBanana Pro — tworzenie i optymalizacja promptów wizualnych
 
@@ -48,7 +48,7 @@ oparte o AI.
 
 `Python` · `Ollama` · `Continue.dev` · `Git / GitHub` · `MCP` · `RAG / embeddings (bge-m3)` ·
 `Markdown / Obsidian` · `REST API` · `Streamlit` (podstawy) · `PowerShell / CLI` ·
-`ChatGPT · Claude · Gemini · Grok` · `Midjourney`
+`ChatGPT · Claude · Gemini · Grok · DeepSeek · Qwen` · `Midjourney`
 
 ---
 
