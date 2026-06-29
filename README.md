@@ -83,6 +83,21 @@ Pełny opis: **[docs/workflow.md](docs/workflow.md)**.
 
 ---
 
+## 🗂️ Side Projects
+
+### 📈 NQ Terminal
+
+Trading dashboard (Python + Streamlit) do bieżącej analizy kontraktu NQ futures.
+
+- **Live dane z MT5** — wątek-daemon odpytuje broker, wylicza tygodniowe Pivot Pointy i VWAP w czasie rzeczywistym
+- **Karta GEX** — Gamma Exposure przez FlashAlpha REST API z lokalnym cache'em (`flow_cache.json`)
+- **Własny silnik UI** — system motywów CSS (`_THEMES`), interaktywny wykres (lightweight-charts w iframe), trwały stan w `ui_settings.json`
+- **PineScript** — własny wskaźnik PP na TradingView (zaktualizowane levele eksportowane z dashboardu)
+
+Stack: `Python` · `Streamlit` · `MT5 API` · `REST API` · `HTML/CSS` · `PineScript`
+
+---
+
 ## 🎓 Wykształcenie
 
 - **Technik Mechatronik** — ZSZ nr 2 im. Żwirki i Wigury, 2025 (elektronika, automatyka, PLC)

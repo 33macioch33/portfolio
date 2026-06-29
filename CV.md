@@ -67,6 +67,11 @@ Kompleksowy projekt, w którym pełnię rolę architekta i operatora sterująceg
 > Kod projektu pozostaje prywatny ze względu na autorski charakter badań. Sanityzowany
 > przegląd architektury i wizualizacja grafu wiedzy: patrz [README.md](README.md).
 
+### Inne projekty
+
+**NQ Terminal** — Python + Streamlit · _prywatne_
+Trading dashboard z live danymi z MT5: tygodniowe Pivot Pointy, VWAP, karta Gamma Exposure (REST API). Własny silnik motywów UI, interactive chart w iframe, PineScript wskaźnik na TradingView.
+
 ---
 
 ## DOŚWIADCZENIE ZAWODOWE
